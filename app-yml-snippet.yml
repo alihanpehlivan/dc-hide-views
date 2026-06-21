@@ -1,0 +1,6 @@
+hooks:
+  after_code:
+    - exec:
+        cd: $home/plugins
+        cmd:
+          - git clone https://github.com/YOUR_GITHUB_USERNAME/discourse-hide-topic-views.git

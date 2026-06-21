@@ -1,0 +1,9 @@
+// Defensive fallback for older/custom themes that still render views outside
+// the modern topic-list column transformer. The backend serializer patch is
+// the real privacy layer; this just keeps dusty UI corners tidy.
+.topic-list th.views,
+.topic-list td.views,
+.topic-list .num.views,
+.topic-map__contents .topic-map__stats .fk-d-menu__trigger {
+  display: none !important;
+}
